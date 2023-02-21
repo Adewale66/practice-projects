@@ -1,3 +1,3 @@
 # practice-projects
 
-Frotn-end practice
+Front-end practice
