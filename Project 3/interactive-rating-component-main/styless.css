@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --ff: 'Overpass', sans-serif;
+    --fw-para: 400;
+    --fw-header: 700;
+
+
+    --bg-clr: hsl(216, 12%, 8%);
+    --container-clr: hsl(213, 19%, 18%);
+    --active-btn:  hsl(216, 12%, 54%);
+    --hover-btn: hsl(25, 97%, 53%);
+
+    --text-clr: hsl(217, 12%, 63%);
+    --header-clr: hsl(0, 0%, 100%);
+    --btn-text: hsl(25, 97%, 53%);
+ 
+}
+
+body {
+    height: 100vh;
+    background-color: var(--bg-clr);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    position: relative;
+    background-color: var(--container-clr);
+    border-radius: 1.25rem;
+    width: 21.25rem;
+    margin-bottom: 1.875rem;
+}
+.form-container {
+
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem;
+    gap: 1em;
+    line-height: 1.25rem;
+    /* display: none; */
+}
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+}
+input {
+    padding: 0.34375rem;
+    border-radius: 0.9375rem;
+    text-align: center;
+    color: var(--text-clr);
+    background-color: var(--hover-btn);
+    font-family: var(--ff);
+    font-weight: var(--fw-header);
+}
+button {
+    width: 14%;
+    border-radius: 50%;
+    padding: 0.625rem;
+    color: var(--text-clr);
+    background-color: var(--bg-clr);
+}
+p {
+    font-size: 0.9375rem;
+    font-family: var(--ff);
+    font-weight: var(--fw-para);
+    color: var(--text-clr);
+}
+
+.img-container{
+    align-self: flex-start;
+    padding: 10px;
+    background-color: var(--active-btn);
+    width: fit-content;
+    border-radius: 50%;
+    height: 15%;
+}
+
+h3 {
+    font-family: var(--ff);
+    font-weight: var(--fw-header);
+    color: var(--header-clr);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--hover-btn);
+}
+input:hover {
+    cursor: pointer;
+    background-color: var(--header-clr);
+    color: var(--btn-text);
+}
+.attribution {
+    color: var(--header-clr);
+}
+
+.clicked {
+    background-color: var(--active-btn);
+}
+span {
+    color: var(--btn-text);
+}
+.submit-container img {
+    width: 7.5rem;
+    height: 5rem;
+}
+
+.submit-container p {
+    text-align: center;
+}
+.submit-container {
+    line-height: 1.25rem;
+    width: 21.25rem;
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.25rem;
+    display: none;
+    height: 18.3920625rem;
+}
