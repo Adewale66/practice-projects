@@ -9,8 +9,8 @@ const advice = async () => {
         const response =  await data.json()
         const span = document.querySelector('span');
         const para = document.querySelector('p');
-        span.innerHTML = `A d v i c e  &nbsp # ${response['slip']['id']}`;
-        para.textContent = response['slip']['advice']
+        span.innerHTML = `A D V I C E  &nbsp # ${response['slip']['id']}`;
+        para.textContent = `"${response['slip']['advice']}"`;
 
     }catch (err) {
         console.log(err);
