@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --bg-clr: hsl(218, 23%, 16%);
+    --container-clr: hsl(217, 19%, 24%);
+    --h3-clr:  hsl(150, 100%, 66%);
+    --text-clr: hsl(193, 38%, 86%);
+
+
+    --ff: 'Manrope', sans-serif;
+    --fw: 800;
+    --fs: 20px
+
+}
+
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    background-color: var(--bg-clr);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 2rem;
+    position: relative;
+    background-color: var(--container-clr);
+    width: 21.875rem;
+    border-radius: 20px;
+}
+
+
+span{
+    color: var(--h3-clr);
+    font-family: var(--ff);
+    font-size: 10px;
+}
+
+p {
+    text-align: center;
+    color: var(--text-clr);
+    font-size: var(--fs);
+    font-family: var(--ff);
+    font-weight: var(--fw);
+}
+
+
+.pattern {
+    margin-bottom: 1.5625rem;
+    width: 100%;
+}
+
+
+.random {
+    position: absolute;
+    bottom: -8%;
+    background-color: var(--h3-clr);
+    border-radius: 50%;
+    padding: 10px;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img{
+    width: 70%;
+}
+
+.img:hover {
+    cursor: pointer;
+}
