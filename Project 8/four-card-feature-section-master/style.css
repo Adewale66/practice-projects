@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: gainsboro;
+}
+
+
+:root {
+    --supervisor-clr: hsl(180, 62%, 55%);
+    --team-builder-clr: hsl(0, 78%, 62%);
+    --karma-clr: hsl(34, 97%, 64%);
+    --calculator-clr: hsl(212, 86%, 64%);
+
+    --para-clr: hsl(0, 0%, 98%);
+    --header-clr: hsl(229, 6%, 66%);
+    --main-header: hsl(234, 12%, 34%);
+
+    --ff: 'Poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 480px;
+    font-family: var(--ff);
+}
+
+h1:nth-of-type(1) {
+    font-size: 32px;
+    font-weight: 400;
+    color: var(--header-clr);
+}
+h1:nth-of-type(2) {
+    font-size: 32px;
+    color: var(--main-header);
+}
+
+span{
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--header-clr);
+}
+
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    /* border: 1px solid red; */
+}
+
+img {
+    width: 50px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 10px 20px 10px;
+    width: 300px;
+    background-color: whitesmoke;
+    border-end-end-radius: 10px;
+
+}
+
+.content p {
+    font-size: 12px;
+    color: var(--header-clr);
+    font-family: var(--ff);
+    font-weight: 200;
+}
+
+.content h4 {
+    color: var(--main-header);
+    font-weight: 600;
+    font-family: var(--ff);
+
+}
+
+.content img {
+    align-self: flex-end;
+}
+
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+#supervisor {
+    border-top: 3px solid var(--supervisor-clr);
+}
+
+#builder {
+    border-top: 3px solid var(--team-builder-clr);
+}
+
+#karma {
+    border-top: 3px solid var(--karma-clr);
+}
+
+#calculator {
+    border-top: 3px solid var(--calculator-clr);
+}
+
+.attribution {
+    margin-top: 10px;
+}
