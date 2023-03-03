@@ -64,7 +64,7 @@ div > p {
 
 #five {
     grid-area: three;
-    width: 200px;
+    width: 210px;
     background-color: hsl(0, 0%, 100%);
     
 }
@@ -75,7 +75,7 @@ div > p {
     background-color: hsl(0, 0%, 100%);
 }
 
-#three h3, #five h3, #three .top span:nth-of-type(1), #five .top span:nth-of-type(1) {
+#three h3, #five h3, #three .top span:nth-of-type(1), #five .top span:nth-of-type(1), #three  p, #five p {
     color:  hsl(217, 19%, 35%);
 }
 #four {
